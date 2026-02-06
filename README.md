@@ -80,10 +80,10 @@ ai-ops-assistant/
 │
 ├── requirements.txt
 ├── README.md
-└── .env.example `
+└── .env.example 
 
 
----
+--- 
 
 ## ⚙️ Setup Instructions (Run Locally)
 
@@ -135,5 +135,6 @@ weather in bangalore
 
 top github repos for machine learning
 
-get weather and trending repos
+get weather and trending repos `
+
 
