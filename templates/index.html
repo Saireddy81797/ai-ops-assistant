@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Ops Assistant</title>
+    <style>
+        body { font-family: Arial; background:#0f172a; color:white; padding:40px }
+        input { width:70%; padding:10px }
+        button { padding:10px; background:#22c55e; border:none; cursor:pointer }
+        pre { background:#020617; padding:15px; margin-top:20px }
+    </style>
+</head>
+<body>
+
+<h1>🤖 AI Ops Assistant</h1>
+
+<input id="query" placeholder="Ask something like: top AI github repos and weather in pune">
+<button onclick="run()">Run</button>
+
+<pre id="output"></pre>
+
+<script>
+async function run() {
+    const q = document.getElementById("query").value;
+    const res = await fetch(`/run?query=${encodeURIComponent(q)}`);
+    const data = await res.json();
+    document.getElementById("output").textContent =
+        JSON.stringify(data, null, 2);
+}
+</script>
+
+</body>
+</html>
