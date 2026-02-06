@@ -118,6 +118,25 @@ App will start at:
 http://127.0.0.1:8000
 
 
+## Tech Stack
+
+- **Programming Language:** Python 3.10+
+- **Web Framework:** FastAPI
+- **LLM:** OpenAI-compatible LLM (used for planning and structured tool invocation)
+- **APIs Integrated:**
+  - GitHub REST API (repository search)
+  - Weather API (current weather data)
+- **Frontend:** HTML + JavaScript (served via FastAPI templates)
+- **Environment Management:** Python virtual environment (`venv`)
+
+
+## Known Limitations & Tradeoffs
+
+- The application depends on third-party APIs (GitHub and Weather). If these services are rate-limited or temporarily unavailable, results may be affected.
+- The planner currently supports natural-language queries focused on repository search and weather information. More complex or ambiguous queries may require additional intent parsing.
+- No user authentication or persistent storage is implemented, as the focus is on demonstrating agent-based reasoning and tool orchestration.
+- The system runs locally and is not production-hardened (no caching, retries, or deployment configuration).
+
 
 ## Example Prompts (Evaluator Ready)
 
@@ -130,6 +149,7 @@ Try any of the following:
 3.top github repos for machine learning
 
 4.get weather and trending repos `
+
 
 
 
