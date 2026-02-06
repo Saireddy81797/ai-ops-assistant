@@ -5,7 +5,7 @@ It runs locally on `localhost` and provides results through a simple web UI and 
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Multi-agent architecture (Planner, Executor, Verifier)
 - Uses LLM-style reasoning with tool invocation
@@ -16,7 +16,7 @@ It runs locally on `localhost` and provides results through a simple web UI and 
 
 ---
 
-## 🏗 Architecture Overview
+## Architecture Overview
 
 The system follows a **multi-agent pipeline**:
 
@@ -80,7 +80,7 @@ ai-ops-assistant/
 │
 ├── requirements.txt
 ├── README.md
-└── .env.example 
+└── .env.example `
 
 
 ---
@@ -136,3 +136,4 @@ weather in bangalore
 top github repos for machine learning
 
 get weather and trending repos
+
