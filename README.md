@@ -39,7 +39,7 @@ The system follows a **multi-agent pipeline**:
 
 ---
 
-## 🔌 Integrated APIs (Real Third-Party APIs)
+##  Integrated APIs (Real Third-Party APIs)
 
 1. **GitHub Public API**
    - Used to fetch top repositories by stars
@@ -51,7 +51,7 @@ The system follows a **multi-agent pipeline**:
 
 ---
 
-## 🧠 LLM & Tool Usage
+##  LLM & Tool Usage
 
 - Uses structured reasoning to decide tool usage
 - No hardcoded responses
@@ -60,8 +60,8 @@ The system follows a **multi-agent pipeline**:
 
 ---
 
-## 📂 Project Structure
-`
+##  Project Structure
+```
 ai-ops-assistant/
 │
 ├── api.py # FastAPI application
@@ -85,7 +85,7 @@ ai-ops-assistant/
 
 --- 
 
-## ⚙️ Setup Instructions (Run Locally)
+##  Setup Instructions (Run Locally)
 
 ### 1 Clone the repository
 ```bash
@@ -96,18 +96,15 @@ cd ai-ops-assistant
 python -m venv venv
 
 3 Activate virtual environment
-
 venv\Scripts\activate
 
 Mac / Linux
-
 source venv/bin/activate
 
 4️ Install dependencies
 pip install -r requirements.txt
 
 5️ Environment Variables
-
 Create a .env file using the example below.
 
 .env.example
@@ -118,7 +115,6 @@ WEATHER_API_KEY=your_weather_api_key_here
 uvicorn api:app --reload
 
 App will start at:
-
 http://127.0.0.1:8000
 
 
@@ -127,14 +123,13 @@ http://127.0.0.1:8000
 
 Try any of the following:
 
-top ai github repos and weather in pune
+1.top ai github repos and weather in pune
 
-show popular python repositories
+2.weather in bangalore
 
-weather in bangalore
+3.top github repos for machine learning
 
-top github repos for machine learning
+4.get weather and trending repos `
 
-get weather and trending repos `
 
 
